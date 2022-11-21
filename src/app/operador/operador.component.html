@@ -1,0 +1,20 @@
+<div class="row ">
+    <div class="col-md-4">
+        <label>OPERADOR A</label>
+        <input type="number" class="form-control" [(ngModel)]="operadorA">
+    </div>
+    <div class="col-md-4">
+        <label>OPERADOR A</label>
+        <input type="number" class="form-control" [(ngModel)]="operadorB">
+    </div>
+
+    <div class="col-md-4 p-4">
+        <button type="submit" class="btn btn-info" (click)="sumainput()">SUMAR</button>
+    </div>
+    <hr/>
+    <app-resultado *ngFor="let item of  Resultado ; let i = index"
+               [itemResul] ="item"
+               [index] ="i"
+               ></app-resultado>
+</div>
+
